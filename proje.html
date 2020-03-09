@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proje</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="proje.css">
+<script src="https://kit.fontawesome.com/b557407e1e.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Spartan:400,700,800&display=swap" rel="stylesheet">
+
+<body>
+
+
+<!-- navbar  -->
+<nav class="navbar navbar-default" id="mainNavBar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="https://www.clipartmax.com/png/full/38-386666_feline-clipart-red-san-mateo-high-bearcat-paw.png" width="30" height="30"> </a>
+      <a class="navbar-brand" href="#">CatFeed</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">How You Can Help?</a></li>
+            <li><a href="#">Make a Donation</a></li>
+            <li><a href="#">Adopt One</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Meet Others</a></li>
+          </ul>
+        </li>
+      </ul>      
+      <ul class="nav navbar-nav navbar-right">        
+        
+      	<li>
+	        <!-- Button trigger modal -->
+			<button class="btn login hidden-lg" data-toggle="modal" data-target="#myModal1"><i class="fas fa-user-plus" ></i> SignUp
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade " id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			        <div class="modal-content">
+			             <div class="modal-header">
+			                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                 <h4 class="modal-title" id="myModalLabel">SignUp</h4>
+			             </div>
+			             <div class="modal-body">
+			                  <form class="form-horizontal" action="pro_dossier_location_maj.php" role="form" method="post">		 	
+								  <div class="form-group">
+								    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+								    <div class="col-sm-10">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required="true">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+								    <div class="col-sm-10">
+								      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required="true">
+								    </div>
+								  </div>  
+								   <div class="form-group">
+								    <label class="col-sm-2 control-label" for="formGroupInputSmall">Name</label>
+								    <div class="col-sm-10">
+								      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="First Name" required="true">
+								    </div>
+								  </div>  
+								  <div class="form-group">
+								    <label class="col-sm-2 control-label" for="formGroupInputSmall">Surname</label>
+								    <div class="col-sm-10">
+								      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Last Name" required="true">
+								    </div>
+								  </div>  
+								  <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <div class="checkbox">
+								        <label>
+								          <input type="checkbox" required="true"> I agree <a href="#">Terms & Conditions.</a>
+								        </label>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <button type="submit" class="btn btn-default"><i class="fas fa-user-lock"></i> Sign Up</button>
+								    </div>
+								  </div>		
+			                  </form>
+			             </div>		             
+			        </div>
+			     </div>
+			</div>
+
+		</li>
+
+		<li>
+	        <!-- Button trigger modal -->
+			<button class="btn login" data-toggle="modal" data-target="#myModal"><i class="fas fa-door-open"></i> LogIn
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			        <div class="modal-content">
+			             <div class="modal-header">
+			                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			                 <h4 class="modal-title" id="myModalLabel">LogIn</h4>
+			             </div>
+			             <div class="modal-body">
+			                  <form class="form-horizontal" action="pro_dossier_location_maj.php" role="form" method="post">
+			                     
+			                  	<div class="form-group">
+								    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+								    <div class="col-sm-10">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required="true">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+								    <div class="col-sm-10">
+								      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required="true">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <div class="checkbox">
+								        <label>
+								          <input type="checkbox"> Remember me
+								        </label>
+								      </div>
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <button type="submit" class="btn btn-primary">Sign in</button>
+								      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								  </div>
+								</div>
+
+
+			                  </form>
+			             </div>		             
+			        </div>
+			     </div>
+			</div>
+
+		</li>
+
+        <!-- <li><a href="#"><i class="fas fa-user"></i> LogIn</a>
+        </li>  -->                     
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container row ">
+	<div class="container col-lg-1 ">
+		
+	</div>
+	<div class="col-lg-4 ">
+		<form class="form-horizontal visible-lg-block" id="signUp">
+		  <div style="text-align: center; color: blue;">
+		  	<h3>Register Here</h3>
+		  </div>	
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		    <div class="col-sm-10">
+		      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required="true">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required="true">
+		    </div>
+		  </div>  
+		   <div class="form-group">
+		    <label class="col-sm-2 control-label" for="formGroupInputSmall">Name</label>
+		    <div class="col-sm-10">
+		      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="First Name" required="true">
+		    </div>
+		  </div>  
+		  <div class="form-group">
+		    <label class="col-sm-2 control-label" for="formGroupInputSmall">Surname</label>
+		    <div class="col-sm-10">
+		      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Last Name" required="true">
+		    </div>
+		  </div>  
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <div class="checkbox">
+		        <label>
+		          <input type="checkbox" required="true"> I agree <a href="#">Terms & Conditions.</a>
+		        </label>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button type="submit" class="btn btn-default"><i class="fas fa-user-lock"></i> Sign Up</button>
+		    </div>
+		  </div>
+		</form>
+		
+	</div>
+	<div class="container col-lg-2">
+		
+	</div>
+	
+	<div class="container col-lg-3 ">
+		<div class="jumbotron container ">
+		  <h2>Cat Lovers</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+		</div>		
+	</div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="proje.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
